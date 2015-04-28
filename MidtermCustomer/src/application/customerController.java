@@ -49,7 +49,7 @@ public class customerController implements Initializable {
 
     @FXML
     private void clearAction(ActionEvent clear){
-    	getFirstName().clear();
+    	firstName.clear();
     	middleInit.clear();
     	lastName.clear();
     	address.clear();
@@ -60,7 +60,7 @@ public class customerController implements Initializable {
     
     @FXML
     private void saveAction(ActionEvent save){
-    	String first = getFirstName().getText();
+    	String first = firstName.getText();
     	String middle = middleInit.getText();
     	String last = lastName.getText();
     	String gen = gender.toString();
@@ -69,7 +69,7 @@ public class customerController implements Initializable {
     	String zip = zipCode.getText();
     	String st = state.getValue();
     	
-    	Customer customerInfo = new Customer(first, middle, last, gen, add, cit, st, zip);
+    	Customer customerNew = new Customer(first, middle, last, gen, add, cit, st, zip);
     	
     	
     }
